@@ -176,6 +176,7 @@ persist.sys.fflag.override.settings_provider_model=false
 persist.vendor.radio.mt_sms_ack=30
 
 # Sensors
+persist.vendor.sensor.hw.binder.size=8
 ro.vendor.sdk.sensors.gestures=false
 ro.vendor.sensors.cmc=false
 ro.vendor.sensors.dev_ori=false
