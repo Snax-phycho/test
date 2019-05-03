@@ -212,6 +212,9 @@ ro.soc.model=SDM660
 # System 
 persist.sys.binary_xml=false
 
+# SurfaceFlinger
+ro.surface_flinger.protected_contents=true
+
 # Time
 persist.vendor.delta_time.enable=true
 
