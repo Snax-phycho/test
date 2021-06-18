@@ -611,4 +611,5 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     capabilities BLOCK_SUSPEND
     ioprio rt 4
     task_profiles ProcessCapacityHigh HighPerformance
+    socket audio_hw_socket seqpacket 0666 system system
     onrestart restart audioserver
