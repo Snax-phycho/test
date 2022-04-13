@@ -279,6 +279,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libion
 
+# IFAA manager
+PRODUCT_PACKAGES += \
+    IFAAService
+
 # IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
