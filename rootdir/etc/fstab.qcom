@@ -1,5 +1,4 @@
 # Android fstab file.
-# The filesystem that contains the filesystem checker binary (typically /system) cannot
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
 #TODO: Add 'check' as fs_mgr_flags with data partition.
@@ -7,10 +6,10 @@
 
 # Non-A/B fstab.qcom variant
 #<src>                                   <mnt_point>            <type> <mnt_flags and options>                          <fs_mgr_flags>
+/dev/block/by-name/system           /system              ext4    ro,barrier=1                                   wait,first_stage_mount
+/dev/block/by-name/vendor           /vendor              ext4    ro,barrier=1                                   wait,first_stage_mount
 /dev/block/bootdevice/by-name/boot           /boot              emmc    defaults                                   recoveryonly
 /dev/block/bootdevice/by-name/recovery       /recovery          emmc    defaults                                   recoveryonly
-/dev/block/bootdevice/by-name/vendor         /vendor            ext4    ro,barrier=1                               wait,recoveryonly
-/dev/block/bootdevice/by-name/system     /                      ext4   ro,barrier=1,discard                             wait,avb
 /dev/block/bootdevice/by-name/userdata   /data                  ext4   nosuid,nodev,barrier=1,noauto_da_alloc,noatime,lazytime   wait,check,fileencryption=ice,reservedsize=128M
 /devices/soc/c084000.sdhci/mmc_host*     /storage/sdcard1       auto   nosuid,nodev                                     wait,voldmanaged=sdcard1:auto,encryptable=footer
 /dev/block/bootdevice/by-name/misc       /misc                  emmc   defaults                                         defaults
