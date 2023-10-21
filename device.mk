@@ -114,6 +114,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth@1.0 \
+    android.hardware.bluetooth@1.0.vendor \
     libsndmonitor \
     libhdmiedid \
     libhfp \
