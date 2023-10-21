@@ -118,6 +118,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libbthost_if \
     audio.bluetooth.default \
+    android.hardware.bluetooth@1.0 \
     android.hardware.bluetooth.audio-impl \
     libsndmonitor \
     libhdmiedid \
