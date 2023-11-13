@@ -107,7 +107,6 @@ persist.sys.camera.camera2=true
 vendor.video.disable.ubwc=1   
 
 # Charger
-ro.charger.enable_suspend=true
 persist.vendor.camera.perflock.enable=0
 
 # Ccodec
