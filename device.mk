@@ -418,7 +418,8 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
-    hardware/google/pixel
+    hardware/google/pixel \
+    hardware/xiaomi
 
 # System
 PRODUCT_PROPERTY_OVERRIDES += \
