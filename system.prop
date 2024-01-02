@@ -59,3 +59,4 @@ ro.iorapd.enable=false
 iorapd.perfetto.enable=false
 iorapd.readahead.enable=false
 persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+debug.hwui.skia_use_perfetto_track_events=false
