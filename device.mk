@@ -432,7 +432,7 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service
+    android.hardware.usb@1.3-service.basic
 
 # VNDK
 PRODUCT_PACKAGES += \
