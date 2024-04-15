@@ -16,8 +16,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
-PRODUCT_COMPRESSED_APEX := false
-
 PRODUCT_PACKAGES += \
     NoCutoutOverlay \
     NotchBarKiller \
