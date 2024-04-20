@@ -73,6 +73,9 @@ USE_CUSTOM_AUDIO_POLICY := 0
 # Compile libhwui in performance mode
 HWUI_COMPILE_FOR_PERF := true
 
+# FIXME: Dexpreopt, a little too big
+WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 TARGET_USES_GRALLOC1 := true
