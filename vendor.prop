@@ -201,7 +201,6 @@ debug.sf.treat_170m_as_sRGB=1
 debug.sf.enable_hwc_vds=1
 ro.config.avoid_gfx_accel=true
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
-ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.max_virtual_display_dimension=4096
 
 # QCOM
@@ -213,7 +212,6 @@ ro.soc.model=SDM660
 
 # SF properties
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
-ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.max_virtual_display_dimension=4096
 
 # System 
