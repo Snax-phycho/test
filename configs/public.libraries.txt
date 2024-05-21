@@ -11,3 +11,4 @@ libnpu.so
 libprotobuf-cpp-full.so
 libprotobuf-cpp-full-3.9.1.so
 libprotobuf-cpp-lite.so
+libprotobuf-cpp-lite-3.9.1.so
