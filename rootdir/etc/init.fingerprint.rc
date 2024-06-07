@@ -41,14 +41,3 @@ on init
 on post-fs-data
     mkdir /data/vendor/fpc 0770 system system
     mkdir /data/vendor/goodix 0770 system system
-<<<<<<<< HEAD:packages/biometrics/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm660.rc
-
-service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm660
-    # "class hal" causes a race condition on some devices due to files created
-    # in /data. As a workaround, postpone startup until later in boot once
-    # /data is mounted.
-    class late_start
-    user system
-    group system input uhid
-========
->>>>>>>> 8146fa817 (sdm660-common: Move to common Xiaomi fingerprint HIDL):rootdir/etc/init.fingerprint.rc
