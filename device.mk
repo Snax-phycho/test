@@ -164,9 +164,8 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0-impl:64 \
-    android.hardware.drm@1.0-service \
-    android.hardware.drm@1.3.vendor
+    android.hardware.drm-service.clearkey \
+    android.hardware.drm@1.2.vendor
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -332,8 +331,9 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi-libperfmgr \
-    android.hardware.power.stats@1.0-service.mock
+    android.hardware.power@1.2.vendor \
+    android.hardware.power-service-qti \
+    vendor.qti.hardware.perf@2.0.vendor
 
 # Powerhint
 PRODUCT_COPY_FILES += \
