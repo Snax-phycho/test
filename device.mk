@@ -208,6 +208,11 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
+    libion.vendor
+
 # Vendor SPL
 VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
@@ -383,7 +388,10 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0 \
-    rild
+    rild \
+    librmnetctl \
+    libsqlite.vendor \
+    libsysutils.vendor
 
 # AOT Preload
 PRODUCT_DEXPREOPT_SPEED_APPS += \
