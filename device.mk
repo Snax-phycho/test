@@ -178,6 +178,11 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
+    libion.vendor
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
@@ -389,7 +394,10 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0 \
-    rild
+    rild \
+    librmnetctl \
+    libsqlite.vendor \
+    libsysutils.vendor
 
 # AOT Preload
 PRODUCT_DEXPREOPT_SPEED_APPS += \
