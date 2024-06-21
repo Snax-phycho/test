@@ -236,13 +236,13 @@ ro.vendor.perf.scroll_opt=true
 ro.control_privapp_permissions=log
 
 # Configure dex2oat
-ro.sys.fw.dex2oat_thread_count=8
-dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
-dalvik.vm.boot-dex2oat-threads=8
-dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7
-dalvik.vm.dex2oat-threads=8
-dalvik.vm.background-dex2oat-cpu-set=0,1,2,3,4,5,6,7
-dalvik.vm.background-dex2oat-threads=8
+ro.sys.fw.dex2oat_thread_count=4
+dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3
+dalvik.vm.boot-dex2oat-threads=5
+dalvik.vm.dex2oat-cpu-set=0,1,2,3
+dalvik.vm.dex2oat-threads=4
+dalvik.vm.background-dex2oat-cpu-set=0,1,2,3
+dalvik.vm.background-dex2oat-threads=4
 
 # IMS
 persist.vendor.ims.disableADBLogs=1
