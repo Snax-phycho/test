@@ -1857,3 +1857,6 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|1ac676dca4c81094b254b62f1b608e4
 
 # Wi-Fi - from LA.UM.8.2.r1-06700-sdm660.0
 vendor/bin/cnss-daemon|d7118e205124e456e6d5ff01efeb8ad931001eb3
+
+vendor/lib64/libril-qc-logger.so|39fd61a8d9ed802aea046d17204ef88434522980
+vendor/lib64/deviceInfoServiceModule.so|c7d4021528f3a43320d0f109a9ed5f765a6a92a2
