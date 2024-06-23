@@ -4,7 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-
 DEVICE_PATH := device/xiaomi/lavender
 
 # Architecture
@@ -31,7 +30,6 @@ RELAX_USES_LIBRARY_CHECK := true
 BUILD_BROKEN_DUP_SYSPROP := true
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
-BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 BUILD_BROKEN_CLANG_PROPERTY := true
 
 # Assert
