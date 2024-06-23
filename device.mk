@@ -11,6 +11,9 @@ $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 # Indicate the first api level the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 28
 
