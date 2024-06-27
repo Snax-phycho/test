@@ -255,21 +255,6 @@ DisplayError HWDevice::Validate(HWLayers *hw_layers) {
 #ifdef MDP_COMMIT_RECT_NUM
         mdp_layer.rect_num = pipe_info->rect;
 #endif
-
-#ifdef DISPLAY_SHIFT_HORIZONTAL
-        if (device_type_ == kDevicePrimary) {
-          pipe_info->dst_roi.left += DISPLAY_SHIFT_HORIZONTAL;
-          pipe_info->dst_roi.right += DISPLAY_SHIFT_HORIZONTAL;
-        }
-#endif
-
-#ifdef DISPLAY_SHIFT_VERTICAL
-        if (device_type_ == kDevicePrimary) {
-          pipe_info->dst_roi.top += DISPLAY_SHIFT_VERTICAL;
-          pipe_info->dst_roi.bottom += DISPLAY_SHIFT_VERTICAL;
-        }
-#endif
-
         SetRect(pipe_info->src_roi, &mdp_layer.src_rect);
         SetRect(pipe_info->dst_roi, &mdp_layer.dst_rect);
         SetMDPFlags(&layer, is_rotator_used, is_cursor_pipe_used, &mdp_layer.flags);
@@ -942,7 +927,8 @@ void HWDevice::GetHWPanelInfoByNode(int device_node, HWPanelInfo *panel_info) {
       } else if (!strncmp(tokens[0], "peak_brightness", strlen("peak_brightness"))) {
         panel_info->peak_luminance = UINT32(atoi(tokens[1]));
       } else if (!strncmp(tokens[0], "average_brightness", strlen("average_brightness"))) {
-        panel_info->average_luminance = UINT32(atoi(tokens[1]));
+        panel_info->average_luminance = UINT32(panel_info->peak_luminance +
+                                            panel_info->blackness_level) / 2;
       } else if (!strncmp(tokens[0], "blackness_level", strlen("blackness_level"))) {
         panel_info->blackness_level = UINT32(atoi(tokens[1]));
       } else if (!strncmp(tokens[0], "white_chromaticity_x", strlen("white_chromaticity_x"))) {

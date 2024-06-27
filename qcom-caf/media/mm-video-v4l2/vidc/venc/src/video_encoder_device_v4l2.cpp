@@ -6491,7 +6491,7 @@ bool venc_dev::venc_set_ltrmode(OMX_U32 enable, OMX_U32 count)
     struct v4l2_ext_controls controls;
     int rc;
 
-    if (!venc_validate_hybridhp_params(0, 0, count, 0)) {
+    if (enable && temporal_layers_config.hier_mode == HIER_P_HYBRID) {
         DEBUG_PRINT_ERROR("Invalid settings, LTR enabled with HybridHP");
         return false;
     }
@@ -7011,7 +7011,7 @@ bool venc_dev::venc_set_iframesize_type(QOMX_VIDEO_IFRAMESIZE_TYPE type)
 bool venc_dev::venc_set_baselayerid(OMX_U32 baseid)
 {
     struct v4l2_control control;
-    if (hier_layers.hier_mode == HIER_P) {
+    if (hier_layers.hier_mode == HIER_P || temporal_layers_config.hier_mode == HIER_P) {
         control.id = V4L2_CID_MPEG_VIDC_VIDEO_BASELAYER_ID;
         control.value = baseid;
         DEBUG_PRINT_LOW("Going to set V4L2_CID_MPEG_VIDC_VIDEO_BASELAYER_ID");
