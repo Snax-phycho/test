@@ -13,6 +13,7 @@ $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+WITH_GMS := false
 
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
