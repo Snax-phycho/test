@@ -293,6 +293,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libion
 
+# CNE symlinks
+PRODUCT_PACKAGES += \
+    libvndfwk_detect_jni.qti_symlink64
+
 # IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
