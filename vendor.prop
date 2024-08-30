@@ -116,6 +116,8 @@ debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
 
 # Display
+debug.cpurend.vsync=false
+debug.egl.hw=1
 debug.sf.disable_client_composition_cache=1
 debug.sf.auto_latch_unsignaled=false
 debug.sf.disable_backpressure=1
